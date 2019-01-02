@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class ex6 {
 
-    private String user = "admin"
-    private String pass = "1234"
+    private static String user = "admin" ;
+    private static String pass = "1234" ;
 
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         String u=null,p=null;
         boolean login = false;
-        int count = 0
+        int count = 0 ;
         do {
             System.out.println("Enter username");
             u = scanner.nextLine();
@@ -30,7 +30,7 @@ public class ex6 {
                     System.out.println("You account have been logged");
                     break;
             }
-        }while (!login)
+        }while (!login);
 
 
 
